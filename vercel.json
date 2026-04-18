@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "bhr-api",
+  "builds": [
+    { "src": "api/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/(.*)", "dest": "/api/index.js" }
+  ],
+  "env": {
+    "FIREBASE_DB_URL": "https://bien-hoa-runners-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "STRAVA_CLIENT_ID": "165837",
+    "STRAVA_CLIENT_SECRET": "025aa7b5e144098b6032eb21d7b2e065bc39dd46",
+    "WEBAPP_URL": "https://bienhoa.web.app"
+  }
+}

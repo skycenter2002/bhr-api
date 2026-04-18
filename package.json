@@ -1,0 +1,20 @@
+{
+  "name": "bhr-api",
+  "version": "1.0.0",
+  "description": "BHR Backend API - Vercel deployment",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node api/index.js",
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
