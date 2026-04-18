@@ -11,9 +11,7 @@ const db = admin.database();
 const STRAVA_CLIENT_ID = '165837';
 const STRAVA_CLIENT_SECRET = '025aa7b5e144098b6032eb21d7b2e065bc39dd46';
 const WEBAPP_URL = process.env.WEBAPP_URL || 'https://bienhoa.web.app';
-// Strava OAuth callback URL — Vercel deployment
-// Update after: npx vercel --prod (lấy URL mới rồi cập nhật ở đây và trên Strava API settings)
-const CALLBACK_URL = process.env.STRAVA_CALLBACK_URL || 'https://bhr-api.vercel.app/stravaCallback';
+const CALLBACK_URL = process.env.STRAVA_CALLBACK_URL || 'https://bhr-api-app.vercel.app/stravaCallback';
 
 // ── Helper: Làm mới access token Strava ──────────────────────
 async function getValidToken(runner) {
